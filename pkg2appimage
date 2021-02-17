@@ -321,17 +321,15 @@ find . -path *icons* -path *512* -name "*$LOWERAPP*" -exec cp {} usr/share/icons
 get_icon
 
 if [ -z "${_union}" ] ; then
-  get_apprun
-else
 cat > AppRun <<\EOF
 #!/bin/sh
 HERE="$(dirname "$(readlink -f "${0}")")"
-export UNION_PRELOAD="${HERE}"
-export LD_PRELOAD="${HERE}/libunionpreload.so"
+# export UNION_PRELOAD="${HERE}"
+# export LD_PRELOAD="${HERE}/libunionpreload.so"
 export PATH="${HERE}"/usr/bin/:"${HERE}"/usr/sbin/:"${HERE}"/usr/games/:"${HERE}"/bin/:"${HERE}"/sbin/:"${PATH}"
 export LD_LIBRARY_PATH="${HERE}"/usr/lib/:"${HERE}"/usr/lib/i386-linux-gnu/:"${HERE}"/usr/lib/x86_64-linux-gnu/:"${HERE}"/usr/lib32/:"${HERE}"/usr/lib64/:"${HERE}"/lib/:"${HERE}"/lib/i386-linux-gnu/:"${HERE}"/lib/x86_64-linux-gnu/:"${HERE}"/lib32/:"${HERE}"/lib64/:"${LD_LIBRARY_PATH}"
-export PYTHONPATH="${HERE}"/usr/share/pyshared/:"${PYTHONPATH}"
-export PYTHONHOME="${HERE}"/usr/
+export PYTHONPATH="${PYTHONPATH}"
+# export PYTHONHOME="${HERE}"/usr/
 export XDG_DATA_DIRS="${HERE}"/usr/share/:"${XDG_DATA_DIRS}"
 export PERLLIB="${HERE}"/usr/share/perl5/:"${HERE}"/usr/lib/perl5/:"${PERLLIB}"
 export GSETTINGS_SCHEMA_DIR="${HERE}"/usr/share/glib-2.0/schemas/:"${GSETTINGS_SCHEMA_DIR}"
