@@ -18,8 +18,15 @@ ingredients:
   script:
     - wget -c --trust-server-names "https://vscode-update.azurewebsites.net/latest/linux-deb-x64/stable"
     - ls code_*.deb | cut -d _ -f 2 > VERSION
+    # additional libray for Ubuntu 14.04 compatibility (it is needed to remove libstdc++6 from excludedeblist file)
+    - wget -c --trust-server-names "http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/libstdc++6_8-20180414-1ubuntu2_amd64.deb"
+    - ar vx libstdc++6_8-20180414-1ubuntu2_amd64.deb
+    - tar -xf data.tar.xz
+    
 
 script:
+# additional libray for Ubuntu 14.04 compatibility
+  - cp ../usr/lib/x86_64-linux-gnu/* ./usr/lib/x86_64-linux-gnu
   - cp usr/share/applications/code.desktop .
   - cp usr/share/pixmaps/com.visualstudio.code.png .
   - convert com.visualstudio.code.png -resize 512x512 usr/share/icons/hicolor/512x512/apps/com.visualstudio.code.png
