@@ -61,7 +61,7 @@ libpango1.0-0
 libpango-1.0-0
 libpangocairo-1.0-0 # Workaround for: openSUSE: undefined symbol: hb_buffer_set_cluster_level?; commenting this out leads to square boxes instead of fonts
 libpangoft2-1.0-0 # Workaround for: openSUSE: undefined symbol: hb_buffer_set_cluster_level?; commenting this out leads to square boxes instead of fonts
-libstdc++6
+#libstdc++6
 libtasn1-6
 libwayland-egl1-mesa # e.g., OpenRA
 lsb-base

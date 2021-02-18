@@ -118,7 +118,8 @@ move_lib()
 # Delete blacklisted files
 delete_blacklisted()
 {
-  BLACKLISTED_FILES=$(cat_file_from_url https://github.com/AppImage/pkg2appimage/raw/${PKG2AICOMMIT}/excludelist | sed 's|#.*||g')
+  # BLACKLISTED_FILES=$(cat_file_from_url https://github.com/AppImage/pkg2appimage/raw/${PKG2AICOMMIT}/excludelist | sed 's|#.*||g')
+  BLACKLISTED_FILES=$(cat_file_from_url https://github.com/zbyna/pkg2appimage/raw/${PKG2AICOMMIT}/excludelist | sed 's|#.*||g')
   echo $BLACKLISTED_FILES
 
   local DOT_DIR=$(readlink -f .)
@@ -284,7 +285,8 @@ generate_status()
   if [ -e "${HERE}/usr/share/pkg2appimage/excludedeblist" ]  ; then
     EXCLUDEDEBLIST="${HERE}/usr/share/pkg2appimage/excludedeblist"
   else
-    wget -q -c "https://github.com/AppImage/AppImages/raw/${PKG2AICOMMIT}/excludedeblist"
+    #  wget -q -c "https://github.com/AppImage/AppImages/raw/${PKG2AICOMMIT}/excludedeblist"
+    wget -q -c "https://github.com/zbyna/pkg2appimage/raw/${PKG2AICOMMIT}/excludedeblist"
     EXCLUDEDEBLIST=excludedeblist
   fi
   rm status 2>/dev/null || true

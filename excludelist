@@ -31,9 +31,10 @@ libutil.so.1
 # These files are all part of the GNU C Library which should never be bundled.
 # List was generated from a fresh build of glibc 2.25.
 
-libstdc++.so.6
+# libstdc++.so.6
 # Workaround for:
 # usr/lib/libstdc++.so.6: version `GLIBCXX_3.4.21' not found
+# This workaround does not work for VisualStudioCode so libstdc++.so.6 is not blacklisted anymore
 
 libGL.so.1
 # The above may be missing on Chrome OS, https://www.reddit.com/r/Crostini/comments/d1lp67/ultimaker_cura_no_longer_running_as_an_appimage/
