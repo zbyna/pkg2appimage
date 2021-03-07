@@ -1,3 +1,7 @@
+## This fork provides possibility to create appimage of Visual Studio Code for Ubuntu 14.04 even after this distribution was [dropped](https://code.visualstudio.com/updates/v1_53#_engineering) in [version 1.53](https://code.visualstudio.com/updates/v1_53)
+
+[download appimage for Visual Studio Code version 1.54 ](https://uloz.to/tamhle/dJXu5SPyLXHy)
+
 # pkg2appimage [![discourse](https://img.shields.io/badge/forum-discourse-orange.svg)](http://discourse.appimage.org) [![Build Status](https://travis-ci.org/AppImage/pkg2appimage.svg)](https://travis-ci.org/AppImage/pkg2appimage) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/0e7dd241a1bf44af9eebc80fd2c71763)](https://www.codacy.com/app/AppImage/pkg2appimage?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AppImage/pkg2appimage&amp;utm_campaign=Badge_Grade) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZT9CL8M5TJU72)
 
 [Download as an AppImage](../../releases/tag/continuous)
