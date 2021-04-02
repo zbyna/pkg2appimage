@@ -4,6 +4,8 @@
 
 [download appimage for Visual Studio Code version 1.54.3 ](https://uloz.to/tamhle/WkQq15m0oUJC)
 
+[download appimage for Visual Studio Code version 1.55.0 ](https://uloz.to/tamhle/AohdBGhH2XdN)
+
 # pkg2appimage [![discourse](https://img.shields.io/badge/forum-discourse-orange.svg)](http://discourse.appimage.org) [![Build Status](https://travis-ci.org/AppImage/pkg2appimage.svg)](https://travis-ci.org/AppImage/pkg2appimage) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/0e7dd241a1bf44af9eebc80fd2c71763)](https://www.codacy.com/app/AppImage/pkg2appimage?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AppImage/pkg2appimage&amp;utm_campaign=Badge_Grade) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZT9CL8M5TJU72)
 
 [Download as an AppImage](../../releases/tag/continuous)
